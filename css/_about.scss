@@ -1,0 +1,25 @@
+section.w-bg2:nth-child(even){
+    position: relative;
+    &:before{
+      content: "";
+      background: url(/imgs/shape_bg_r.png) no-repeat;
+      position: absolute;
+      width: 556px;
+      height: 100%;
+      top:-2.45rem;;
+      left: 0;
+    }
+  }
+
+  section.w-bg2:nth-child(odd){
+    position: relative;
+    &:before{
+      content: "";
+      background: url(/imgs/shape_bg_l.png) no-repeat;    
+      position: absolute;
+      width: 556px;
+      height: 100%;
+      top:0;
+      right: 0;
+    }
+  }

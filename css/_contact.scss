@@ -1,0 +1,53 @@
+.contact-form-1{
+    padding: 0 !important;
+    .form-control{
+        background: #f4f7ff;
+    }
+    .contact-btn{
+        text-align: left !important;
+    }
+}
+
+
+.contact-form-2{
+    padding: 3% 20%;
+    form{
+        .form-control{
+            font-family: 'JostBook';
+            border:none;
+            padding: 0.5rem 0.75rem;
+        }
+        .contact-btn{
+            margin: 2rem 0;
+            .a-link{
+                background: $blue;
+                font-family: 'JostBook';
+                width:150px;
+                color: white;
+                &:hover{
+                    background: $pink;
+                }
+            }
+        }
+    }
+}
+
+.contact-us{
+    background: #f4f7ff;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    h4{
+        margin-bottom: 2rem;
+    }
+    ul{
+        li{
+            p{
+                &:first-child{
+                    font-family: 'JostMedium';
+                    color: $pink;
+                    font-size: 1.125rem;
+                }
+            }            
+        }
+    }
+}

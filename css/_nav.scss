@@ -1,0 +1,150 @@
+nav#desktop-nav {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  background: white;
+  position: fixed;
+  top: 0;
+}
+
+.-mt {
+  margin-top: 109px;
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+  .nav-link {
+    font-family: "JostMedium";
+    font-size: 1.25rem;
+    color: #333;
+    i {
+      vertical-align: middle;
+    }
+    &:hover {
+      color: $pink !important;
+    }
+  }
+  &.active {
+    .nav-link {
+      color: $pink;
+    }
+  }
+}
+
+.dm-2{
+  ul.drop-menu-li{
+    min-width: 15rem !important;
+  }
+}
+
+ul.drop-menu-li {
+  top: 74px;
+  padding: 0;
+  border-radius: 0 !important;
+  border: none;
+  min-width: 12.5rem;
+  padding: 0.75rem 0;
+  background: $blue;
+  border-radius: 5px;
+  position: absolute;
+  // min-width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+  transform: translateY(5px);
+  li {
+    margin: 0.75rem 0;
+    padding: 0 1rem;
+    list-style: none;
+    a {
+      font-size: 1.125rem;
+      color: white;
+      font-family: "JostMedium";
+      transition: 0.3s all;
+      span {
+        margin-right: 0.5rem;
+      }
+      &:hover {
+        color: $pink !important;
+      }
+    }
+  }
+}
+
+.drop-menu {
+  position: relative;
+  &:hover {
+    ul.drop-menu-li {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+#surgery-dd {
+  position: relative;
+  a{
+    &:hover{
+      color: white !important;
+    }
+  }
+  #collapseMenu {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    right: 0;
+    .drop-menu-li {
+      transition: 0.3s all;
+      padding: 0;
+      li {
+        padding-left: 1.5rem;
+        a {
+          color: #b5c5f1;
+          &:hover{
+            color: $pink !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#surgery-dd {
+  a {
+    &[aria-expanded="true"] {
+      &:before {
+        content: "\f068";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 8%;
+      }
+    }
+    &[aria-expanded="false"] {
+      &:before {
+        display: none;
+      }
+      &:after {
+        content: "\f067";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 8%;
+      }
+    }
+  }
+}
+
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: transparent;
+}
+

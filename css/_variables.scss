@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+
+$blue: #1f3d9d;
+$pink: #f22282;
+$black: #333333;
+$l-gray: #f3f3f3;
+
+@font-face {
+  font-family: JostBold;
+  src: url(/fonts/ttf/Jost-Bold.ttf);
+  src: url(/fonts/otf/Jost-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JostBook;
+  src: url(/fonts/ttf/Jost-Book.ttf);
+  src: url(/fonts/otf/Jost-Book.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JostSemiBold;
+  src: url(/fonts/ttf/Jost-Semi.ttf);
+  src: url(/fonts/otf/Jost-Semi.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JostMedium;
+  src: url(/fonts/ttf/Jost-Medium.ttf);
+  src: url(/fonts/otf/Jost-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  position: relative;
+  &.disable{
+    &:before{   
+      content:"" ;      
+      position: absolute;
+      top: -7rem;    
+      bottom: 0;
+      right:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1010;
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;    
+    }
+  }
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 2.25rem;
+  margin-bottom: 0;
+  color: #333333;
+}
+
+p.w-mb{
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    margin: 0.75rem 0;
+  }
+}
+a{
+  transition: 0.3s all;
+}
+
+a.mme-link{
+  color: $pink;
+}
+
+section {
+  padding: 7rem 0;
+
+  &.c-bg {
+    background: #f4f7ff;
+  }
+}
+
+
+  section.w-bg:nth-child(odd){
+    position: relative;
+    &:before{
+      content: "";
+      background: url(/imgs/shape_bg_r.png) no-repeat;
+      position: absolute;
+      width: 556px;
+      height: 100%;
+      top:-2.45rem;;
+      left: 0;
+    }
+  }
+  
+  section.w-bg:nth-child(even){
+    position: relative;
+    &:before{
+      content: "";
+      background: url(/imgs/shape_bg_l.png) no-repeat;    
+      position: absolute;
+      width: 556px;
+      height: 100%;
+      top:0;
+      right: 0;
+    }
+  }
+  
+h1,
+h2,
+h3,
+h4 {
+  font-family: "JostSemiBold";
+  color: $blue;
+  span {
+    color: $pink;
+  }
+}
+
+h1 {
+  font-size: 2.75rem !important;
+}
+
+.img {
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+

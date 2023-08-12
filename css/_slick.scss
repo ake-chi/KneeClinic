@@ -1,0 +1,81 @@
+.slick-slide{
+    outline: none !important;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;  
+    opacity: 1;
+  }
+  .slick-prev {
+    left: -16px;
+    &:before {
+      content: "\f104";
+      color: white !important;
+    }
+    &:hover, &:focus {
+      background: rgba(31, 61, 157, 0.8);
+    }
+  }
+  .slick-next {
+    right: -16px;
+    &:before {
+      content: "\f105";
+      color: white !important;
+    }
+    &:hover, &:focus {
+    background: rgba(31, 61, 157, 0.8);
+    }
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 20; 
+    width: 40px;
+    height:40px;
+    border-radius: 0.35rem;
+    background: rgba(31, 61, 157, 1);
+    transition: 0.3s all;
+  }
+
+  .testimonial-slider,.team-slider{
+    .slick-dots{
+      bottom: -50px;
+      li button{
+        width: 10px;
+        height: 10px;        
+        border-radius: 50px;
+        background: #d7d7d7;
+        transition: 0.7s ease-in-out;
+        &:before{
+          content:"";
+        }
+      }
+      li.slick-active{
+        margin-left: 0;
+        margin-right: 1rem;  
+        button{
+            background: $pink !important;
+            width: 30px;                  
+            &:before{
+              opacity: 1;
+              color: black;
+            }
+          }
+      } 
+    }
+  }
+
+  .team-slider{
+    .slick-prev {
+      left: -60px;
+    }
+    .slick-next {
+      right: -60px;
+    }
+    .slick-prev, .slick-next{
+      top:35%;
+    }
+  }

@@ -1,0 +1,317 @@
+@media screen and (max-width: 1536px) {
+}
+
+@media screen and (max-width: 1199px) {
+  header:before {
+    bottom: 0;
+  }
+
+  //slick
+
+  .team-slider {
+    .slick-prev {
+      left: -5px;
+    }
+    .slick-next {
+      right: -5px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header{
+    overflow-y: hidden;
+  }
+  .banner-text {
+    padding-top: 1.5rem;
+
+    h1 {
+      font-size: 2.5rem !important;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .banner-img {
+    padding-top: 3%;
+    img {
+      width: 100%;
+    }
+    .img-wrapper {
+      position: relative;
+      .pulse-shape,
+      .pulse-shadow {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .header-inq {
+    top: -3rem;
+    padding: 1rem 0;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+
+  .sec-img {
+    .img {
+      padding: 0;
+    }
+    .c-hrs {
+      width: 100%;
+      bottom: -5rem;
+      padding: 1rem 0.75rem;
+      margin-bottom: 2rem;
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  .services-box {
+    .services-icon {
+      padding: 1rem;
+    }
+  }
+
+  .testimonial-item {
+    padding: 0 4rem;
+  }
+
+  .subs-sec {
+    padding: 2rem;
+    form.subs-form {
+      padding: 0;
+    }
+  }
+
+  footer {
+    padding: 3.5rem 0 0 0;
+    .f-title {
+      font-size: 1.125rem;
+    }
+    ul {
+      li {
+        font-size: 0.875rem;
+      }
+    }
+    .copyright{
+        p{
+            font-size: 0.875rem;
+        }
+    }
+  }
+
+  //contact
+  .contact-us {
+    padding: 1rem;
+
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  .contact-form-2 {
+    padding: 3% 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+  .c-msg{
+    .banner-text{
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .banner-img{
+      .img{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .navbar-brand{
+    padding-left: 0;
+  }
+
+  .banner-items {
+    flex-direction: column;
+  }
+
+  .img {
+    margin-bottom: 2rem;
+  }
+  h2.sec-title {
+    margin: 0 0 1rem 0;
+  }
+  section.w-bg:nth-child(even):before,
+  section.w-bg:nth-child(odd):before,
+  section.w-bg2:nth-child(even):before,
+  section.w-bg2:nth-child(odd):before {
+    display: none;
+  }
+
+  .subs-sec {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .header-inq {
+    padding: 2rem 0;
+    form {
+      margin-top: 1rem;
+      .form-group:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .c-hrs{
+    padding: 1.5rem 1rem;
+    p {
+        font-size: 1.125rem !important;
+    }
+  } 
+
+  .services-box {
+    margin-top: 2rem;
+    .services-icon {
+      padding: 3rem 1rem;
+      margin: 0 1rem 2rem 1rem;
+    }
+    div:nth-child(3) {
+      .services-icon {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .abt-sec {
+    padding-top: 3.5rem;
+  }
+
+  .testimonial-slider .testimonial-item p:first-child:after{
+    bottom: -3.5rem !important;
+    right: 0;
+  }
+
+  .testimonial-item p:last-child{
+    margin-top: 2rem;
+  }
+
+  .testimonial-slider {
+    margin-top: 0;
+    .testimonial-item {
+      padding: 4rem 0 0 0;
+      p {
+        &:first-child:before {
+          top: -3rem;
+          left: 0;
+        }
+        &:first-child:after {
+          bottom: -1rem;
+          right: 0;
+        }
+      }
+    }
+    .slick-dots {
+      bottom: -35px;
+    }
+  }
+
+  #subsModal .modal-content .modal-body{
+    padding: 2rem;
+  }
+
+  //slick
+
+  .t-slide {
+    padding: 0 2rem;
+  }
+
+  .team-slider {
+    .slick-prev {
+      left: 27px !important;
+    }
+    .slick-next {
+      right: 27px !important;
+    }
+  }
+
+  .team-slider {
+      margin-top: 3rem;
+    .slick-dots {
+      bottom: -50px;
+    }
+  }
+
+  .subs-form,
+  .header-inq {
+    .form-group {
+      input.form-control {
+        margin-bottom: 1rem;
+      }
+    }
+    .subs-btn {
+      padding: 0 3rem;
+    }
+  }
+
+  h4.pt-5 {
+    padding-top: 0 !important;
+  }
+
+  .cs-img {
+    height: 480px;
+  }
+
+  .contact-form-2 {
+    padding: 3% 0;
+  }
+  .contact-form-2,
+  .contact-form-1.contact-form-2 {
+    form {
+      .form-group.row {
+        div {
+          &:first-child {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .row {
+      div {
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .f-logo {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  p {
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}

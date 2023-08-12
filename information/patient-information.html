@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Knee Clinic: Anatomy of the Knee</title>
+    <meta name="description" content="personal loans">
+    <link rel="icon" href="../imgs/kc.ico" type="image/x-icon">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Slick-theme.css-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Slick-theme.css -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg d-none d-lg-block nav-menu" id="desktop-nav">
+        <div class="container">
+            <a class="navbar-brand nav-link" href="../index.html">
+                <img src="../imgs/kc_logo.png" alt="Knee Clinic">
+            </a>
+            <div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" id="home">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item drop-menu">
+                        <a class="nav-link">Services <i class="fas fa-angle-down"></i></a>
+                        <ul class="drop-menu-li">
+                            <li> <a href="../services/knee-procedure.html">Knee Procedure</a></li>
+                            <li><a href="../services/rehabilitation.html">Rehabilition</a></li>
+                            <li><a href="../services/injury-prevention.html">Injury Prevention</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item drop-menu dm-2 active">
+                        <a class="nav-link">Patient Information <i class="fas fa-angle-down"></i></a>
+                        <ul class="drop-menu-li">
+                            <li> <a href="../information/patient-information.html">Anatomy of the Knee</a></li>
+                            <li id="surgery-dd"> <a data-toggle="collapse" href="#collapseMenu" aria-expanded="true"
+                                    aria-controls="collapseMenu">Surgery</a>
+                                <div class="collapse show" id="collapseMenu">
+                                    <ul class="drop-menu-li">
+                                        <li> <a href="../information/surgery.html#acl">ACL Reconstruction</a></li>
+                                        <li><a href="../information/surgery.html#ka">Knee Arthroscopy</a></li>
+                                        <li><a href="../information/surgery.html#tkr">Total Knee Replacement</a></li>
+                                        <li><a href="../information/surgery.html#arthritis">Knee Arthritis</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- mobile-menu -->
+     <div id="mobile-menu" class="d-md-block d-lg-none">
+        <nav id="mobile-nav" class="navbar">
+            <div class="nav-bg"></div>
+            <div class="container">
+                <div class="mobile-menu nav-menu">
+                    <a class="navbar-brand nav-link sm-link" href="../index.html">
+                        <img src="../imgs/kc_logo.png" alt="Knee Clinic">
+                    </a>
+                    <div class="menu-btn">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="slide-menu nav-menu">
+            <div class="close-btn">
+                <p class="text-right"><span><i class="fas fa-times"></i></span></p>
+            </div>
+            <div class="mmenu-li">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" id="home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item drop-menu">
+                        <a class="nav-link" data-toggle="collapse" href="#collapseServ" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            Services
+                        </a>
+                        <div class="collapse show" id="collapseServ">
+                            <ul>
+                                <li> <a href="../services/knee-procedure.html">Knee Procedure</a></li>
+                                <li><a href="../services/rehabilitation.html">Rehabilition</a></li>
+                                <li><a href="../services/injury-prevention.html">Injury Prevention</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item drop-menu">
+                        <a class="nav-link" data-toggle="collapse" href="#collapseInfo" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            Patient Information
+                        </a>
+                        <div class="collapse show" id="collapseInfo">
+                            <ul>
+                                <li class="active"> <a href="../information/patient-information.html">Anatomy of the Knee</a></li>
+                                <li><a href="../information/surgery.html">Surgery</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="-mt w-bg2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5 order-sm-2">
+                    <div class="img w-border" data-aos="fade" data-aos-delay="200" data-aos-duration="2000"
+                        data-aos-easing="ease-out-back">
+                        <img src="../imgs/p-info-img1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-7 order-sm-1">
+                    <h2 class="sec-title" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out-back">
+                        <span>Anatomy</span> of the Knee</h2>
+                    <div data-aos="fade" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-out-back">
+                        <p>The knee is one of the largest and most complex joints in the body. It is more than just a
+                            simple
+                            hinge joint in a sense that it carry much of the pressure and force of bending such as
+                            climbing
+                            stairs, standing from a sitting position, and lifting.</p>
+                        <p class="mt-4 mb-4">Knees are comprised of the following elements to carry out their functions:
+                        </p>
+                        <ul class="p-info-li">
+                            <li><i class="fas fa-bullseye"></i> Bones</li>
+                            <li><i class="fas fa-bullseye"></i> Articular cartilage</li>
+                            <li><i class="fas fa-bullseye"></i> Menisci</li>
+                            <li><i class="fas fa-bullseye"></i> Ligaments</li>
+                            <li><i class="fas fa-bullseye"></i> Muscles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-5 mb-5 order-sm-3" data-aos="fade" data-aos-delay="200"
+                    data-aos-duration="2000" data-aos-easing="ease-out-back">
+                    <h4>How Your Knee Works</h4>
+                    <p>A healthy knee rotates slightly and bends with little to no effort. The joint absorbs the
+                        pressure which enables you to move smoothly allowing you to walk, sit, squat, and turn without
+                        pain.</p>
+                </div>
+
+                <div class="col-md-5 order-sm-4" data-aos="fade" data-aos-delay="200" data-aos-duration="2000"
+                    data-aos-easing="ease-out-back">
+                    <div class="img">
+                        <img src="../imgs/p-info-img2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-7 order-sm-5" data-aos="fade" data-aos-delay="200" data-aos-duration="2000"
+                    data-aos-easing="ease-out-back">
+                    <h4>Knee Injuries</h4>
+                    <p>The knee is one of the most commonly injured joint in the body. Common knee injuries include the
+                        ff:</p>
+                    <ul class="p-info-li">
+                        <li><i class="fas fa-bullseye"></i> Fractures</li>
+                        <li><i class="fas fa-bullseye"></i> Dislocation</li>
+                        <li><i class="fas fa-bullseye"></i> Meniscal Tears</li>
+                        <li><i class="fas fa-bullseye"></i> Bursitis</li>
+                        <li><i class="fas fa-bullseye"></i> Tendositis</li>
+                        <li><i class="fas fa-bullseye"></i> Collateral ligament injuries</li>
+                        <li><i class="fas fa-bullseye"></i> Posterior cruciate ligament injuries</li>
+                        <li><i class="fas fa-bullseye"></i> Anterior cruciate ligament (ACL) injuries</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-0">
+        <div class="container">
+
+            <div class="subs-sec text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"
+                data-aos-easing="ease-out-back">
+                <p class="sec-name">Newsletter</p>
+                <h2 class="sec-title"><span>Subscribe</span> to our updates</h2>
+
+                <form class="subs-form">
+                    <div class="form-group row mb-0">
+                        <div class="col-md-4">
+                            <input type="text" id="subsName" placeholder="Name*" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="subsEmail" placeholder="Email*" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <p class="subs-btn"> <button class="btn" onclick="return checkForm()">Subscribe</button></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Subs Modal -->
+    <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p><img src="../imgs/kc_logo.png" alt="Knee Clinic"></p>
+                    <h1>Thank you for signing up!</h1>
+                    <p>You will now receive updates from us.</p>
+                    <div class="text-center subs-cta">
+                        <a href="../index.html" class="btn subs-link">Back to Home</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="text-center f-logo"><img src="../imgs/kc_logo_2.png" alt="Knee Clinic"></p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="f-title">Our Specialties</p>
+                    <ul>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Knee Procedures</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Rehabilitation</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Injury Prevention</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="f-title">Our Company</p>
+                    <ul>
+                        <li><a href=""><i class="fas fa-angle-right"></i> About Us</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="f-title">Information</p>
+                    <ul class="email-sched">
+                        <li><i class="fas fa-envelope"></i> office@kneeclinic.com.au</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri 9:00am - 9:00pm</li>
+                        <li><i class="fas fa-clock"></i> Sat - Sun 9:00am - 6:00pm</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright
+                <script>document.write(new Date().getFullYear());</script> KneeClinic.com.au</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script/main.js"></script>
+</body>
+
+</html>

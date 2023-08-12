@@ -1,0 +1,439 @@
+header{
+    height: 7   0vh;
+    background: #f4f7ff;   
+    position: relative;
+    margin-top: 101px;
+    z-index: 2;
+    &:before{
+        content: "";
+        background: url(/imgs/shape_bg.png) no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -3.25rem;
+        z-index: -1;
+    } 
+}
+
+.banner-items{
+    display: flex;    
+    .banner-text, .banner-img{
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+    }
+}
+.banner-text{
+    padding-top: 10%;
+    p{
+        font-size: 1.125rem;
+    }
+    
+    .btn.cta-link{
+        background: #1f3d9d;
+        color: white;
+        min-width: 200px;
+        padding: 0.5rem;
+        font-family: 'JostBook';
+        font-size: 1.125rem;
+        margin-top: 2rem;
+        &:hover{
+            background: $pink;
+        }
+    }
+}
+
+.banner-img{ 
+    padding-top: 3%;   
+    img{
+        width: 100%;
+    }
+    .img-wrapper{
+        position: relative;
+        .pulse-shape{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: $pink;
+            position: absolute;
+            top:40%;
+            right:0;
+            bottom: 0;
+            z-index: -1;
+            
+        }
+        .pulse-shadow{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: transparent;
+            top:40%;
+            right:0;
+            bottom: 0;
+            z-index: -2;
+            
+        }
+    }
+}
+
+
+@keyframes pulse{
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+    25% {
+        box-shadow: 0 0 0 16px rgba(242, 34, 130, 0.1);
+      }
+    50% {
+        box-shadow: 0 0 0 16px rgba(242, 34, 130, 0.1);
+      }
+     75% {
+        box-shadow: 0 0 0 16px rgba(244, 247, 255, 0.2);
+      }
+    100% {
+      box-shadow: 0 0 0 16px rgba(244, 247, 255, 0.05);
+    }
+  }
+
+  @keyframes pulse-shadow{
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 0 36px rgba(242, 34, 130, 0.1);
+      }
+     75% {
+        box-shadow: 0 0 0 36px rgba(244, 247, 255, 0.1);
+      }
+    100% {
+      box-shadow: 0 0 0 36px rgba(244, 247, 255, 0.1);
+    }
+  }
+
+.pulse-shape{
+    animation-name: pulse;
+    animation-duration: 3s;    
+    animation-iteration-count: infinite;
+}
+
+.pulse-shadow{
+    animation-name: pulse-shadow;    
+    animation-duration: 3s;    
+    animation-iteration-count: infinite;
+}
+
+.header-inq {
+    position: relative;
+    top: -6rem;
+    padding: 3rem 2rem;
+    background: rgba(31,61, 157,0.9);
+    border-radius: 1rem;
+    margin:0;
+    z-index: 3;
+    p{
+        color: white;
+    }
+    p:nth-child(1){
+        font-family: 'JostSemiBold';
+        font-size: 1.5rem;        
+    }
+}
+
+form.header-contact{
+    .contact-btn{
+        button{
+            width: 100%;
+            background: #f22282;
+            color: white;
+            font-family: 'JostBook';
+            font-size: 1.125rem;
+            padding: 0.5rem 0.75rem;
+        }
+    }
+}
+
+.sec-name{
+    text-transform: uppercase;
+    font-family: 'JostBook';
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+h2.sec-title {
+    margin: 0 0 1.5rem 0;
+}
+
+.sec-link{
+    margin-top: 2rem;
+    .a-link{
+        font-family: 'JostSemiBold';
+        color:$blue;
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        i{
+            vertical-align: middle;
+        }
+        &:hover{
+            color: $pink;        
+        }
+    }
+}
+
+.sec-img{
+    position: relative;
+    .img{
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }    
+}
+
+
+.c-hrs {
+    border-radius: 0.5rem;
+    background: rgba(31, 61, 157, 0.9);
+    color: white !important;
+    padding: 2rem 1rem;
+    width: 320px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    .d-flex{
+        span{
+            &:first-child{
+                font-family: 'JostSemiBold';
+                font-size: 1.25rem;
+            }
+        }
+        
+    }
+    p{
+        font-family: 'JostBook';
+        font-size: 1rem;
+        margin:0;
+        color: white !important;
+    }
+
+}
+
+
+.services-box{
+    margin-top: 4rem;
+    .services-icon{
+        background:white;
+        border-radius: 0.5rem;
+        padding: 2rem;  
+        transition: 0.5s all;          
+        .img-cont {
+            width: 140px;
+            height: 140px;
+            border: 2px dashed #f22282;
+            border-radius: 50%;
+            margin: auto;
+            img{
+                padding: 1rem;
+            }
+        }   
+        p{
+            color: $blue;
+            font-family: 'JostSemiBold';  
+            font-size: 1.25rem;      
+            margin-top: 1.5rem;    
+            transition: 0.1s all;          
+        } 
+        &:hover{
+           background: $blue;
+           transform:translateY(-5px);
+            p{
+                color: white !important; 
+            }
+        }
+    }
+}
+
+.w-check{    
+    li {
+        i{
+            color: $blue;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.testimonial-slider{
+    margin-top: 4rem;
+}
+
+.testimonial-item {
+    padding: 0 8rem;
+    p{
+        &:first-child{
+            position: relative;
+            &:before{
+                content: "";
+                background: url('/imgs/quote.png') no-repeat;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top:0;
+                left:-4rem;                
+            }
+            &:after{
+                content: "";
+                background: url('/imgs/quote.png') no-repeat;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                transform:scale(-1);                
+                bottom:0;
+                right:-4rem;                
+            }
+        }
+        &:last-child{
+            font-family: 'JostSemiBold';
+            margin-top: 3rem;
+            font-size: 1.25rem;
+        }
+        
+    }
+}
+
+.team-slider{
+    margin-top: 4rem;
+}
+
+.t-slide{
+    .team-img{
+        margin-bottom: 2rem;
+        border:2px solid #f3f3f3;
+        border-radius: 0.5rem;
+    }
+    p.d-name{
+        font-family: 'JostSemiBold';
+        font-size: 1.25rem;
+        color:$blue;
+    }  
+}
+
+.subs-sec{           
+    padding: 3rem 2rem;
+    box-shadow:  0 27px 80px rgba(0, 0, 0, 0.06), 0 15px 21.5px rgba(0, 0, 0, 0.04);
+    border-radius: 0.5rem;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+form.subs-form {
+    padding: 0 5rem;
+    p.subs-btn{
+        .btn{
+            width: 100%;
+            font-family: 'JostBook';
+            background: #f22282;
+            color: white;
+            font-size: 1rem;  
+            &:hover{
+                background: $blue;
+            }           
+        }
+    }
+    .form-control{
+        background: #f4f7ff;
+        border: none;
+        color: #333;
+        font-family: 'JostBook';
+        padding: .5rem .75rem;
+    }
+}
+
+footer{
+    padding: 7rem 0 0 0;
+    background: #0c1a49;
+    color: white;
+
+    .f-title{
+        font-family: 'JostSemiBold';
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    ul{
+        li{
+            a{
+                color: white;
+                i{
+                    color: $pink;
+                    margin-right: 0.5rem;
+                }
+                &:hover{
+                    color: $pink;
+                }
+            }
+        }
+    }
+
+    .email-sched{
+        li{
+            i{
+                margin-right: 0.5rem;
+                vertical-align:middle;
+            }
+        }
+    }
+
+    .f-logo{
+        margin-bottom: 4rem;
+    }
+
+}
+
+footer{
+    position: relative;
+    &:before{
+        content:"";
+        position: absolute;
+        top:-115px;
+        background: #0c1a49;
+        width: 100%;
+        height: 115px;
+        z-index: 1;
+    }
+}
+
+
+.copyright {
+    margin-top: 3rem;
+    p {
+        text-align: center;
+        color: white;
+        padding: 2rem;        
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+#subsModal{
+    .modal-content{        
+        .modal-body{
+            padding: 3rem;
+            text-align: center;   
+            background: #fff3f8; 
+            font-family: 'JostSemiBold';     
+            h1{
+                color: $blue;
+                line-height: 3rem;                
+            }
+            .subs-link{
+                margin-top: 2rem;
+                background: $blue;
+                color: white;
+                font-family: 'JostSemiBold';
+                transition: 0.3s all;
+                &:hover{
+                    background: $pink;
+                }
+            }
+        }
+    }
+}

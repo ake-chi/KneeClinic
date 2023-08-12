@@ -1,0 +1,71 @@
+.img.w-border {
+  border: 2px solid #f3f3f3;
+  border-radius: 0.5rem;
+}
+
+.p-info-li {
+  li {
+    i {
+      color: $pink;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.desc-collapse {
+  .accordion {
+      button.btn{
+          border:none;          
+          padding: 0.75rem;
+      }
+    .collapse{        
+        .card{
+            border-radius: 0;
+            border:none;
+        }
+        & > p{
+            margin-top: 1rem;
+        }
+    }
+  }
+}
+
+.accordion {
+    margin-bottom: 1rem;    
+  button {
+    width: 100%;
+    background: $blue;
+    font-family: "JostSemiBold";
+    color: white;           
+    text-align: left;
+    font-size: 1.125rem;
+    position: relative;    
+
+    &[aria-expanded="true"] {
+      &:before {
+        content: "\f068";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;        
+        color: white;
+        position: absolute;
+        top: 20%;
+        right: 3%;
+      }
+    }
+    &[aria-expanded="false"] {
+      &:before {
+        display: none;
+      }
+      &:after {
+        content: "\f067";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: white;
+        position: absolute;
+        top: 20%;
+        right: 3%;
+      }
+    }
+  }
+}

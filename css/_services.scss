@@ -1,0 +1,21 @@
+.img.w-gr-bg{
+    background: #f7f6f9;
+    border-radius: 0.5rem;
+}
+
+.cs-img {
+    width: 100%;
+    height: 623px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    p{
+        font-size: 1.25rem;
+        font-weight: 700;
+        span{
+            font-size: 3.5rem;
+        }
+    }
+}
